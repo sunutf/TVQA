@@ -1,10 +1,12 @@
 __author__ = "Jie Lei"
 
+import os
 import torch
+import sys
 from torch import nn
 
-from rnn import RNNEncoder, max_along_time
 from bidaf import BidafAttn
+from rnn import RNNEncoder, max_along_time
 from mlp import MLP
 
 

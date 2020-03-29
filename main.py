@@ -1,6 +1,7 @@
 __author__ = "Jie Lei"
 
 import os
+import sys
 import torch
 import torch.nn as nn
 import torch.backends.cudnn as cudnn
@@ -8,7 +9,7 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 from tensorboardX import SummaryWriter
 
-from model.tvqa_abc import ABC
+from tvqa_abc import ABC
 from tvqa_dataset import TVQADataset, pad_collate, preprocess_inputs
 from config import BaseOptions
 

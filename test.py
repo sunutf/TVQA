@@ -7,7 +7,7 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 import numpy as np
 
-from model.tvqa_abc import ABC
+from tvqa_abc import ABC
 from tvqa_dataset import TVQADataset, pad_collate, preprocess_inputs
 from config import TestOptions
 from utils import merge_two_dicts, save_json
